@@ -1,0 +1,1 @@
+HelloWorld!Here are WriteStream By Python
