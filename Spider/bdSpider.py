@@ -55,12 +55,12 @@ def askUrl(url):
     request.add_header('Referer', 'https://baidu.com/')
     request.add_header('User-Agent', "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, "
                                      "like Gecko) Chrome/97.0.4692.71 Safari/537.36")
-    request.add_header('cookie', "login_sid_t=e81b55d664c5d9b9853a4de850ef6bc2; cross_origin_proto=SSL; _s_tentry=-; "
-                                 "Apache=7651911694974.564.1641718410361; SINAGLOBAL=7651911694974.564.1641718410361; "
-                                 "ULV=1641718410368:1:1:1:7651911694974.564.1641718410361:; "
-                                 "SUB=_2AkMWhi2gf8NxqwJRmP4QzmPqa4twywzEieKg2tx7JRMxHRl"
-                                 "-yT92qlwHtRB6PQYDT6Ze9YWS5Sa8V6N4YKybe42fe0d-; "
-                                 "SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5n3sNiHR.WR.x.ZErwK5Y_")
+    # request.add_header('cookie', "login_sid_t=e81b55d664c5d9b9853a4de850ef6bc2; cross_origin_proto=SSL; _s_tentry=-; "
+    #                              "Apache=7651911694974.564.1641718410361; SINAGLOBAL=7651911694974.564.1641718410361; "
+    #                              "ULV=1641718410368:1:1:1:7651911694974.564.1641718410361:; "
+    #                              "SUB=_2AkMWhi2gf8NxqwJRmP4QzmPqa4twywzEieKg2tx7JRMxHRl"
+    #                              "-yT92qlwHtRB6PQYDT6Ze9YWS5Sa8V6N4YKybe42fe0d-; "
+    #                              "SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5n3sNiHR.WR.x.ZErwK5Y_")
     html = ""
     try:
         response = urllib.request.urlopen(request)
