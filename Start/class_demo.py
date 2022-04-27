@@ -14,6 +14,16 @@ class BenzCar:
         self.color = newColor
 
 
+class Benz2016(BenzCar):
+    price = 580000
+    model = 'Benz2016'
+
+
+class Benz2018(BenzCar):
+    price = 880000
+    model = 'Benz2018'
+
+
 car1 = BenzCar('白色', '24503425527866')
 car1.changeColor('黑色')
 
