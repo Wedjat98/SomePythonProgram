@@ -79,8 +79,7 @@ def main():
     dbpath = "wbTopRank.db"
     dataList = getData(baseurl)
     saveData2DB(dataList, dbpath)
-
-
-if __name__ == "__main__":
-    main()
     print("Done!")
+
+
+

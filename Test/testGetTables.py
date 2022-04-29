@@ -33,8 +33,9 @@ def GetTables(db_file='../Spider/wbTopRank.db'):
             result.append(tab[0])
         sql4 = f'select * from {result[-2]}'
         queryResult = cur.execute(sql4)
-        for row in queryResult:
-            print(row[1])
+        return queryResult
+        # for row in queryResult:
+        #     print(row[1])
     except sqlite3.Error as e:
         print(e)
 
@@ -48,4 +49,5 @@ cur.execute("PRAGMA table_info(T_Person)")
 print cur.fetchall()
 
 '''
-GetTables()
+for row in GetTables():
+    print(row[1])
